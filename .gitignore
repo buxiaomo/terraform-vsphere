@@ -1,0 +1,10 @@
+# OSX files
+**/.DS_Store
+!.gitignore
+
+# terraform
+.terraform
+*.tfstate
+*.backup
+*.json
+*.tfvars
