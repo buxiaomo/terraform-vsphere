@@ -1,0 +1,13 @@
+# OSX files
+.DS_Store
+__pycache__
+.tmp
+
+
+# terraform
+*.terraform
+*.tfstate
+*.backup
+.terraform
+*.tfvars
+.terraform.lock.hcl
