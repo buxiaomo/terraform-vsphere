@@ -46,7 +46,7 @@ variable "dns" {
   type = list(string)
 }
 
-variable "vms" {
+variable "instances" {
   type = map(object({
     hostname = string
     ipaddr   = string
@@ -55,7 +55,7 @@ variable "vms" {
   }))
 }
 
-variable "ipv4_netmask" {
+variable "netmask" {
   type = string
 }
 
