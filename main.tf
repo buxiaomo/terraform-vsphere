@@ -62,7 +62,7 @@ resource "vsphere_resource_pool" "resource_pool" {
 }
 
 resource "vsphere_virtual_machine" "kubernetes" {
-  for_each             = var.vms
+  for_each             = var.instances
   name                 = each.value["hostname"]
   resource_pool_id     = vsphere_resource_pool.resource_pool.id
   datastore_cluster_id = data.vsphere_datastore_cluster.vsphere_datastore_cluster.id
@@ -112,7 +112,7 @@ resource "vsphere_virtual_machine" "kubernetes" {
 
       network_interface {
         ipv4_address = each.value["ipaddr"]
-        ipv4_netmask = var.ipv4_netmask
+        ipv4_netmask = var.netmask
       }
     }
   }
