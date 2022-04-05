@@ -85,16 +85,16 @@ resource "vsphere_virtual_machine" "kubernetes" {
   }
 
   disk {
-    label       = "disk1"
-    size        = "50"
-    unit_number = 1
+    label            = "disk1"
+    size             = "50"
+    unit_number      = 1
     thin_provisioned = true
   }
 
   disk {
-    label       = "disk2"
-    size        = "50"
-    unit_number = 2
+    label            = "disk2"
+    size             = "50"
+    unit_number      = 2
     thin_provisioned = true
   }
 

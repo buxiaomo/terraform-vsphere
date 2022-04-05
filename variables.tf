@@ -33,7 +33,7 @@ variable "vsphere_datastore_cluster" {
 # -----------------------------------------------
 
 # --------------- Template Setup ----------------
-variable "vsphere_virtual_machine_template" {
+variable "instances_template" {
   type = string
 }
 
